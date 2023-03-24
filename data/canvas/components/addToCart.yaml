@@ -1,0 +1,10 @@
+id: addToCart
+name: Add to cart
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1675425439/vNext%20Demos/Baseline/canvas-preview/Add_to_cart_maddaz.png
+parameters: []
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-02-28T10:38:56.751735+00:00'
+updated: '2023-02-28T14:25:25.199586+00:00'

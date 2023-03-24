@@ -1,0 +1,37 @@
+composition:
+  _name: Article (Template)
+  _id: ab46c63d-7ec2-404b-81b4-073af47cfe08
+  _slug: article-slug
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Article
+  slots:
+    content:
+      - _id: fecd9ba0-97ef-4b62-abef-13182c0e3e72
+        type: article
+        parameters:
+          content:
+            type: algolia-record
+            value:
+              objectIDs:
+                - my-first-day-with-cervello-di-caffe
+              index_name: articles
+      - _id: ab9428c4-4e6c-48ba-b0fd-5fae56e80e54
+        type: recommendedArticles
+        variant: dark
+        parameters:
+          title:
+            type: text
+            value: Recommended to read
+          articles:
+            type: algolia-recommend
+            value:
+              index_name: articles
+              recommendOptions:
+                objectId: meet-the-experts
+                maxRecommendations: 30
+created: '2023-03-07T12:31:57.264222+00:00'
+modified: '2023-03-10T09:33:44.733036+00:00'
+pattern: false

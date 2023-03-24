@@ -1,0 +1,35 @@
+id: callToAction
+name: Call to Action
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1675163156/vNext%20Demos/Baseline/canvas-preview/Call_to_Action_xfbvd7.png
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: text
+    name: Text
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+      multiline: true
+      linesCount: '10'
+  - id: buttonCopy
+    name: Button Copy
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: buttonLink
+    name: Button Link
+    type: link
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-02-28T10:38:57.529794+00:00'
+updated: '2023-02-28T14:25:26.109075+00:00'

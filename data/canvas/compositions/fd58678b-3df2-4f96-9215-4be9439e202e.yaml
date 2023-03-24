@@ -1,0 +1,31 @@
+composition:
+  _name: Articles
+  _id: fd58678b-3df2-4f96-9215-4be9439e202e
+  _slug: articles
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Articles
+    pageMetaDescription:
+      type: text
+      value: Articles
+  slots:
+    content:
+      - _id: 6c0ba48e-4def-40cb-8c46-5b60a6877709
+        type: articlesList
+        parameters:
+          title:
+            type: text
+            value: Articles
+          content:
+            type: algolia-query
+            value:
+              options:
+                count: 50
+                searchText: ''
+                facetsValues: {}
+              index_name: articles
+created: '2023-03-07T12:15:04.970405+00:00'
+modified: '2023-03-07T12:19:17.84551+00:00'
+pattern: false

@@ -1,0 +1,113 @@
+composition:
+  _name: Home
+  _id: c7831905-e8b8-4002-b127-1281326079c4
+  _slug: /
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Home Page
+    pageMetaDescription:
+      type: text
+      value: Fake Commerce Home Page
+  slots:
+    content:
+      - _id: ff573aa1-3d29-4d28-a607-8397c34bf4b3
+        type: hero
+        parameters:
+          title:
+            type: text
+            value: See our new coffee makers
+          buttonCopy:
+            type: text
+            value: See our coffee makers
+          buttonLink:
+            type: link
+            value:
+              path: /shop/coffee-makers
+              nodeId: 0065505a-37c8-4a77-a66d-3ae7d414af6f
+              projectMapId: 89a0d435-3096-4e77-84f1-eda9ea8bc677
+          backgroundImage:
+            type: select
+            value: >-
+              res.cloudinary.com/uniformdev/image/upload/v1675862472/vNext%20Demos/Fake%20Commerce/hero-default_nhdw2h.webp
+      - _id: fdaed343-768d-466d-8f63-821e92375a94
+        type: callToAction
+        parameters:
+          text:
+            type: text
+            value: >-
+              Welcome to JavaDrip. We are a boutique coffee company obsessed
+              with the perfect cup of coffee. We believe that the perfect cup
+              starts with the perfect bean and that those beans require the
+              perfect brewing method. This means that we offer both high quality
+              beans and products to meet any occasion and mood. Have a look
+              around and let us know if you have any questions.
+          title:
+            type: text
+            value: The home of coffee obsessives
+      - _id: 5e8e36e3-894a-407a-b944-be9c5334743d
+        type: featuredProducts
+        variant: ''
+        parameters:
+          title:
+            type: text
+            value: Our smart coffee machines
+          products:
+            type: algolia-query
+            value:
+              options:
+                count: 3
+                searchText: ''
+                facetsValues: {}
+              index_name: products
+          subTitle:
+            type: text
+            value: Coffee beans that predict what taste buds want next
+          buttonCopy:
+            type: text
+            value: See Coffee Makers
+          buttonLink:
+            type: link
+            value:
+              path: /shop/coffee-makers
+              nodeId: 0065505a-37c8-4a77-a66d-3ae7d414af6f
+              projectMapId: 89a0d435-3096-4e77-84f1-eda9ea8bc677
+          showAddToCart:
+            type: checkbox
+            value: true
+      - _id: f2f6b895-9c23-479d-a2fb-56cc3129c23f
+        type: recommendedProducts
+        variant: dark
+        parameters:
+          title:
+            type: text
+            value: Beans recommended products
+          products:
+            type: algolia-recommend
+            value:
+              index_name: products
+              recommendOptions:
+                objectId: '80'
+                maxRecommendations: 5
+      - _id: decba573-f739-4672-8375-3dcab00e049e
+        type: featuredProducts
+        variant: dark
+        parameters:
+          title:
+            type: text
+            value: Featured products just for you
+          products:
+            type: algolia-query
+            value:
+              options:
+                count: 5
+                searchText: beans
+                facetsValues: {}
+              index_name: products
+          showAddToCart:
+            type: checkbox
+            value: true
+created: '2023-02-28T10:39:02.442117+00:00'
+modified: '2023-03-16T11:12:25.992002+00:00'
+pattern: false

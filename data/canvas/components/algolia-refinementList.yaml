@@ -1,0 +1,16 @@
+id: algolia-refinementList
+name: Refinement List
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1677844318/vNext%20Demos/Baseline/canvas-preview/Algolia_Refinement_List_vw3evj.png
+parameters:
+  - id: refinementListParams
+    name: Refinement List Parameters
+    type: algolia-components
+    helpText: ''
+    typeConfig:
+      selectedComponent: Refinement List
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-02-28T10:38:57.416662+00:00'
+updated: '2023-03-03T11:52:51.212646+00:00'

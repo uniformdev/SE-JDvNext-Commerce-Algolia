@@ -1,0 +1,51 @@
+id: featuredProducts
+name: Featured Products
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1675425024/vNext%20Demos/Baseline/canvas-preview/Featured_Products_eh6zef.png
+parameters:
+  - id: products
+    name: Products
+    type: algolia-query
+    helpText: ''
+    typeConfig:
+      allowedIndex: products
+      titleFieldName: name
+      imageUrlFieldName: thumbnailImage
+      subTitleFieldName: ''
+      level3TitleFieldName: ''
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: true
+  - id: subTitle
+    name: Sub Title
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+  - id: buttonCopy
+    name: Button Copy
+    type: text
+    helpText: ''
+    typeConfig: null
+  - id: buttonLink
+    name: Button Link
+    type: link
+    helpText: ''
+    typeConfig: null
+  - id: showAddToCart
+    name: Show Add to Cart
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-02-28T10:38:57.992466+00:00'
+updated: '2023-03-01T14:13:53.087059+00:00'
+variants:
+  - id: dark
+    name: Dark

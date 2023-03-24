@@ -1,0 +1,21 @@
+id: product
+name: Product (Template)
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1678786023/vNext%20Demos/Baseline/canvas-preview/Product_Template_bybxyp.png
+parameters:
+  - id: content
+    name: Template Product
+    type: algolia-record
+    helpText: >-
+      This is an example of how the product will look when you go to it from the
+      product list page
+    typeConfig:
+      required: true
+      allowedFacet: categories
+      allowedIndex: products
+      titleFieldName: name
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-03-14T10:48:43.458187+00:00'
+updated: '2023-03-14T12:31:11.701657+00:00'
